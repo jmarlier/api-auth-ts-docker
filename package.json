@@ -1,0 +1,32 @@
+{
+  "name": "api-auth-ts-docker",
+  "version": "1.0.0",
+  "description": "Ce repository a pour objectif de construire, étape par étape, une API REST moderne en **Node.js** et **TypeScript**, intégrant par la suite une authentification JWT et une conteneurisation avec **Docker**.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmarlier/api-auth-ts-docker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jmarlier/api-auth-ts-docker/issues"
+  },
+  "homepage": "https://github.com/jmarlier/api-auth-ts-docker#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.10.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
