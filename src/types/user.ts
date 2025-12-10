@@ -4,4 +4,7 @@ export interface User {
     email: string;
   }
   
-  export type CreateUserDTO = Omit<User, "id">;
+export type CreateUserDTO = Omit<User, "id">;
+  
+// Pour la mise à jour : name et/ou email, optionnels
+export type UpdateUserDTO = Partial<CreateUserDTO>;
